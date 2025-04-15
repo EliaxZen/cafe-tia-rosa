@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Caffé da Tia Rosa - Uma experiência encantadora onde o café se encontra com a magia.">
+
+    <!-- Meta Tags SEO -->
+    <meta name="keywords" content="café, cafeteria, lanche, brunch, café especial, ambiente aconchegante">
+    <meta name="author" content="Caffé da Tia Rosa">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caffedatiarosa.com.br">
+    <meta property="og:title" content="Caffé da Tia Rosa - Experiência Mágica em Cada Xícara">
+    <meta property="og:description" content="Descubra nosso espaço encantador e cafés especiais preparados com paixão.">
+    <meta property="og:image" content="https://caffedatiarosa.com.br/images/social-share.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Ícones -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Caffé da Tia Rosa | Café Especial & Ambiente Aconchegante</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header id="main-header" class="header-scroll">
+        <div class="container header-container">
+            <a href="#inicio" class="logo-link">
+                <h1 class="logo">
+                    <span class="logo-icon"><i class="fas fa-mug-hot"></i></span>
+                    <span>Caffé da Tia Rosa</span>
+                </h1>
+            </a>
+
+            <button class="menu-toggle" aria-label="Menu principal" aria-expanded="false" aria-controls="main-menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="main-menu" class="menu">
+                <ul class="menu-list">
+                    <li><a href="#inicio" class="menu-link active" data-section="inicio">Início</a></li>
+                    <li><a href="#sobre" class="menu-link" data-section="sobre">Sobre</a></li>
+                    <li><a href="#espaco" class="menu-link" data-section="espaco">Espaço</a></li>
+                    <li><a href="#produtos" class="menu-link" data-section="produtos">Produtos</a></li>
+                    <li><a href="#contato" class="menu-link" data-section="contato">Contato</a></li>
+                </ul>
+
+                <div class="menu-utils">
+                    <button class="theme-toggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero com Carrossel -->
+        <section id="inicio" class="section hero-section" data-section="inicio">
+            <div class="hero-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active" data-slide="1">
+                            <div class="carousel-image-container">
+                                <img src="images/1.png" alt="Ambiente aconchegante do Caffé da Tia Rosa"
+                                    class="carousel-image" loading="lazy">
+                            </div>
+                            <div class="carousel-overlay">
+                                <h2 class="carousel-title">Desperte seus Sentidos</h2>
+                                <p class="carousel-text">Entre em um mundo onde o café é pura magia</p>
+                                <a href="#produtos" class="btn btn-primary">Conheça nossos produtos</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" data-slide="2">
+                            <div class="carousel-image-container">
+                                <img src="images/1.png" alt="Detalhe de xícara de café especial" class="carousel-image"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-overlay">
+                                <h2 class="carousel-title">Sabores que Encantam</h2>
+                                <p class="carousel-text">Cafés especiais preparados com paixão</p>
+                                <a href="#produtos" class="btn btn-primary">Nossas bebidas</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" data-slide="3">
+                            <div class="carousel-image-container">
+                                <img src="images/1.png" alt="Pães e doces artesanais" class="carousel-image"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-overlay">
+                                <h2 class="carousel-title">Delícias Artesanais</h2>
+                                <p class="carousel-text">Confeitaria fina para acompanhar seu café</p>
+                                <a href="#produtos" class="btn btn-primary">Ver cardápio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="carousel-prev" aria-label="Slide anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-next" aria-label="Próximo slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <button class="carousel-indicator active" aria-label="Ir para slide 1" data-slide="1"></button>
+                        <button class="carousel-indicator" aria-label="Ir para slide 2" data-slide="2"></button>
+                        <button class="carousel-indicator" aria-label="Ir para slide 3" data-slide="3"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Role para explorar</span>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section about-section" data-section="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossa História</span>
+                    <h2 class="section-title">Sobre o Caffé da Tia Rosa</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Fundado em 2010, o Caffé da Tia Rosa nasceu do sonho de trazer para nossa cidade um espaço
+                            onde as pessoas pudessem desacelerar e apreciar os pequenos prazeres da vida.</p>
+                        <p>Inspirado nas cafeterias tradicionais europeias, mas com um toque brasileiro, nosso
+                            estabelecimento combina técnicas ancestrais de preparo de café com ingredientes locais de
+                            alta qualidade.</p>
+                        <p>Hoje, somos referência em cafés especiais na região, oferecendo não apenas bebidas
+                            excepcionais, mas uma experiência completa de aconchego e bem-estar.</p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-seedling feature-icon"></i>
+                                <h3>Grãos Selecionados</h3>
+                                <p>Trabalhamos com os melhores produtores de café especial do Brasil</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <i class="fas fa-heart feature-icon"></i>
+                                <h3>Preparo Artesanal</h3>
+                                <p>Cada xícara é preparada com atenção aos detalhes</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <i class="fas fa-leaf feature-icon"></i>
+                                <h3>Sustentabilidade</h3>
+                                <p>Práticas eco-friendly em todo nosso processo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="images/1.png" alt="Tia Rosa preparando café" class="img-fluid" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Espaço -->
+        <section id="espaco" class="section space-section" data-section="espaco">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Conheça nosso</span>
+                    <h2 class="section-title">Espaço Aconchegante</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">Um ambiente cuidadosamente projetado para sua tranquilidade e
+                        conforto</p>
+                </div>
+
+                <div class="space-gallery">
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/1.png" alt="Área interna da cafeteria" class="gallery-image"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Área Interna</h3>
+                                <p>Ambiente climatizado com decoração rústica</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/1.png" alt="Varanda com vista para o jardim" class="gallery-image"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Varanda</h3>
+                                <p>Vista privilegiada para nosso jardim interno</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/1.png" alt="Mesa de trabalho compartilhada" class="gallery-image"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Espaço Coworking</h3>
+                                <p>Área para trabalho com internet de alta velocidade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-card">
+                            <img src="images/1.png" alt="Estante com livros e plantas" class="gallery-image"
+                                loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Cantinho da Leitura</h3>
+                                <p>Seleção de livros para acompanhar seu café</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-features">
+                    <div class="feature-box">
+                        <i class="fas fa-wifi feature-icon"></i>
+                        <h3>Wi-Fi Grátis</h3>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fas fa-parking feature-icon"></i>
+                        <h3>Estacionamento</h3>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fas fa-paw feature-icon"></i>
+                        <h3>Pet Friendly</h3>
+                    </div>
+
+                    <div class="feature-box">
+                        <i class="fas fa-accessible-icon feature-icon"></i>
+                        <h3>Acessível</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Produtos -->
+        <section id="produtos" class="section products-section" data-section="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Nossas Especialidades</span>
+                    <h2 class="section-title">Cardápio Selecionado</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="product-tabs">
+                    <button class="tab-button active" data-tab="cafes">Cafés</button>
+                    <button class="tab-button" data-tab="bebidas">Bebidas</button>
+                    <button class="tab-button" data-tab="doces">Doces</button>
+                    <button class="tab-button" data-tab="salgados">Salgados</button>
+                </div>
+
+                <div class="tab-content active" data-tab="cafes">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/1.png" alt="Café espresso" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Espresso Clássico</h3>
+                                <p class="product-description">Café intenso com crema aveludada, servido em xícara
+                                    pequena</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 8,90</span>
+                                    <button class="btn btn-outline">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/1.png" alt="Café latte" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Latte Cremoso</h3>
+                                <p class="product-description">Espresso com leite vaporizado e uma fina camada de espuma
+                                </p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 12,90</span>
+                                    <button class="btn btn-outline">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/1.png" alt="Café com especiarias" loading="lazy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Café Especiado</h3>
+                                <p class="product-description">Blend exclusivo com canela, cardamomo e noz-moscada</p>
+                                <div class="product-footer">
+                                    <span class="product-price">R$ 14,50</span>
+                                    <button class="btn btn-outline">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-cta">
+                    <p>Quer ver o cardápio completo?</p>
+                    <a href="#" class="btn btn-primary">Baixar Cardápio (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section contact-section" data-section="contato">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <span class="section-subtitle">Entre em contato</span>
+                            <h2 class="section-title">Visite-nos</h2>
+                            <div class="section-divider"></div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt info-icon"></i>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>Rua das Flores, 123 - Centro<br>São Paulo/SP</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-clock info-icon"></i>
+                            <div>
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 8h às 20h<br>Sábado e Domingo: 9h às 22h</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt info-icon"></i>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>(11) 1234-5678</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Selecione...</option>
+                                    <option value="reserva">Reserva</option>
+                                    <option value="evento">Eventos</option>
+                                    <option value="duvida">Dúvida</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.376415278618!2d-46.63481692468716!3d-23.55493047880039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a00cc9896b%3A0x4d7fa8becba4e40d!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1683123868397!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-mug-hot"></i>
+                        <span>Caffé da Tia Rosa</span>
+                    </a>
+                    <p>Uma experiência mágica em cada xícara desde 2010.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Cardápio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Receba nossas novidades e promoções especiais</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor email" required>
+                        <button type="submit" class="btn btn-outline">Assinar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Caffé da Tia Rosa. Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
